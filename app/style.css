@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap");
+
+.container {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  /* margin-left: 40px; */
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  font-family: "Lora", serif;
+}
+
+.card {
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+.image {
+  max-width: 100%;
+}
+.heart-checkbox {
+  display: none;
+}
+.heart-label {
+  position: relative;
+  cursor: pointer;
+}
+.heart-label::before {
+  content: "\2665"; /* Unicode character for a heart */
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gray;
+  transition: color 0.3s;
+}
+.heart-checkbox:checked + .heart-label::before {
+  color: red;
+}
+
+.recipe-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-height: 100%;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  /* Add the desired gap */
+}
+/* .recipe-card {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height: 150px;
+  /* margin-top: 20px; */
+/* background-color: ghostwhite; */
+/* } */
+*/ .recipe-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.recipe-image {
+  max-width: 100%;
+}
+.step-checkbox {
+  display: none;
+}
+.step-label {
+  position: relative;
+  cursor: pointer;
+}
+.step-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  text-decoration: underline;
+  color: black;
+}
+.step-checkbox:checked + .step-label::before {
+  text-decoration: overline;
+  color: gray;
+}
+.back-button {
+  margin-top: 20px;
+}
