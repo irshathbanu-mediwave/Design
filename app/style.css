@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap");
 
 .container {
-  text-align: center;
+  /* text-align: center; */
   margin: auto;
   margin-top: 30px;
   /* margin-left: 40px; */
   display: flex;
   justify-content: center; /* Horizontally center */
-  align-items: center;
+
   gap: 20px;
   flex-direction: row;
   font-family: "Lora", serif;
@@ -50,11 +50,29 @@
 .heart-checkbox:checked + .heart-label::before {
   color: red;
 }
+.hearts-checkbox {
+  display: none;
+}
+.hearts-label {
+  cursor: pointer;
+}
+.hearts-label::before {
+  content: "\2665"; /* Unicode character for a heart */
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gray;
+  transition: color 0.3s;
+}
+.hearts-checkbox:checked + .hearts-label::before {
+  color: red;
+}
 
 .recipe-card {
   width: 300px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 10px;
   max-height: 100%;
   font-size: 20px;
@@ -64,6 +82,18 @@
 
   /* Add the desired gap */
 }
+.recipe-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.recipe-image {
+  max-width: 100%;
+}
+.heading {
+  display: flex;
+  gap: 250px;
+}
+
 /* .recipe-card {
   width: 300px;
   padding: 10px;
@@ -75,21 +105,15 @@
   /* margin-top: 20px; */
 /* background-color: ghostwhite; */
 /* } */
-*/ .recipe-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.recipe-image {
-  max-width: 100%;
-}
-.step-checkbox {
+*/ 
+/* .step-checkbox {
   display: none;
-}
-.step-label {
-  position: relative;
-  cursor: pointer;
-}
-.step-label::before {
+} */
+/* .step-label {
+  /* position: relative; */
+/* cursor: pointer; */
+/* } */
+/* .step-label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,7 +124,7 @@
 .step-checkbox:checked + .step-label::before {
   text-decoration: overline;
   color: gray;
-}
-.back-button {
-  margin-top: 20px;
+} */
+*/ .back-button {
+  margin-right: 200px;
 }

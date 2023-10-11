@@ -4,48 +4,62 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div>
-      <div class="container">
-        <div class="card">
-          <div class="title">Card Title</div>
-          <div class="img">
-            <img
-              class="image"
-              src="https://t3.ftcdn.net/jpg/04/26/16/38/240_F_426163816_3DSLxfNnalgtoWhGxGLFNMbz30m6cXZV.jpg"
-              alt="Card Image"
-            />
-            <div class="heart">
-              <input type="checkbox" class="heart-checkbox" id="heart" />
-              <label class="heart-label" for="heart"></label>
-            </div>
-          </div>
+    <div class="container">
+      <div class="card">
+        <div class="title">Recipe Title</div>
+        <div class="img">
+          <img
+            class="image"
+            src="https://t3.ftcdn.net/jpg/04/26/16/38/240_F_426163816_3DSLxfNnalgtoWhGxGLFNMbz30m6cXZV.jpg"
+            alt="Card Image"
+          />
         </div>
-
-        <div class="recipe-card">
-          <div class="recipe-title">Recipe Title</div>
-          <div>
-            <img
-              class="recipe-image"
-              src="https://t3.ftcdn.net/jpg/04/26/16/38/240_F_426163816_3DSLxfNnalgtoWhGxGLFNMbz30m6cXZV.jpg"
-              alt="Recipe Image"
-            />
-          </div>
-          <div>
-            <input type="checkbox" class="step-checkbox" id="step1" />
-            <label class="step-label" for="step1">Step 1</label>
-          </div>
-          <div>
-            <input type="checkbox" class="step-checkbox" id="step2" />
-            <label class="step-label" for="step2">Step 2</label>
-          </div>
-          <div>
-            <input type="checkbox" class="step-checkbox" id="step3" />
-            <label class="step-label" for="step3">Step 3</label>
-          </div>
+        <div class="heart">
+          <input type="checkbox" class="heart-checkbox" id="heart" />
+          <label class="heart-label" for="heart"></label>
         </div>
       </div>
-      <div class="container">
-        <button class="back-button"><a href="login.html"> Back</a></button>
+
+      <div class="recipe-card">
+        <div class="heading">
+          <div class="btn">
+            <button class="back-button"><a href="card.html"> Back</a></button>
+          </div>
+          <div class="hearts">
+            <input type="checkbox" class="hearts-checkbox" id="hearts" />
+            <label class="hearts-label" for="heart"></label>
+          </div>
+        </div>
+        <br />
+        <div class="recipe-img">
+          <img
+            class="recipe-image"
+            src="https://t3.ftcdn.net/jpg/04/26/16/38/240_F_426163816_3DSLxfNnalgtoWhGxGLFNMbz30m6cXZV.jpg"
+            alt="Recipe Image"
+          />
+        </div>
+        <div class="recipe-title">Recipe Title</div>
+        <div class="step">
+          <h4>Steps</h4>
+          <div>
+            <p>
+              <input type="checkbox" class="step-checkbox" id="step1" />
+              <label class="step-label" for="step1">Step 1</label>
+            </p>
+          </div>
+          <div>
+            <p>
+              <input type="checkbox" class="step-checkbox" id="step2" />
+              <label class="step-label" for="step2">Step 2</label>
+            </p>
+          </div>
+          <div>
+            <p>
+              <input type="checkbox" class="step-checkbox" id="step3" />
+              <label class="step-label" for="step3">Step 3</label>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
